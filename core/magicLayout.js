@@ -27,14 +27,14 @@ facebook: https://www.facebook.com/melnik909
 		}
 	};
 
-	$.fn.animationLayout = function(method){
+	$.fn.magicLayout = function(method){
 
 		if ( methods[method] ) {
 		  return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
 		} else if ( typeof method === 'object' || ! method ) {
 		  return methods.init.apply( this, arguments );
 		} else {
-		  $.error( 'Метод с именем ' +  method + ' не существует для jQuery.tooltip' );
+		  $.error( 'Метод с именем ' +  method + ' не существует для magicLayout' );
 		}
 
 	};

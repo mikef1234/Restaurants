@@ -22,33 +22,33 @@
 			worksY = works.offset().top;
 
 			if(window.pageYOffset < worksY){
-					$(this).animationLayout({
+					$(this).magicLayout({
 						container: header
 					});
 					
-					$(this).animationLayout({
+					$(this).magicLayout({
 							container: about
 					});
 				
 			}else{
-					$(this).animationLayout({
+					$(this).magicLayout({
 						container: works
 					});
 			}
 			
-			$(document).on('scroll' , function(){
+			$(document).on('scroll' , function(){ 
 			
 				if(window.pageYOffset <= worksY){
-					$(this).animationLayout({
+					$(this).magicLayout({
 						container: works
 					});
 	
 				}else{
-					$(this).animationLayout({
+					$(this).magicLayout({
 						container: header
 					});
 					
-					$(this).animationLayout({
+					$(this).magicLayout({
 							container: about
 					});
 				}
