@@ -6,7 +6,7 @@ github: https://github.com/melnik909
 facebook: https://www.facebook.com/melnik909
 */
 
-(function($) {
+(function($) { 
 
 	var methods = {
 		init: function (options){
