@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Magic Layout</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="../core/animate.css" type="text/css" media="screen"/>
+<style>
+.layer {
+    animation-fill-mode: both;
+    display: block;
+    opacity: 0;
+}
+
+.demo_stas_project {
+    height: 250px;
+	width: 250px;
+	position: relative;
+	text-align: center;
+	background-color: #40c95d;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.demo_stas_project_item {
+
+	color: #fff;
+	font-size: 18px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+	<header class="dt_wrapper">
+		<div class="dt_container">
+			<h1 class="dt_logo">Magic <span class="dt_label_logo">Layout</span></h1>
+		</div>
+	</header>
+	<div class="dt_container dt_content">
+		<div class="dt_welcome">
+			<p class="dt_paragraph">By: Stas Melnikov</p>
+			<p class="dt_paragraph">Email: <a href="mailto:melnik909@ya.ru" class="dt_link">melnik909@ya.ru</a></p>
+		</div>
+		<h3 class="dt_itle_small">1 Step</h3>
+		<pre class="code language-html">
+&lt;!-- include animate.css  and animationLayout.js--&gt;
+&lt;link rel="stylesheet" type="text/css" href="../core/animate.css" /&gt;
+&lt;script src="../core/animationLayout.js"&gt;&lt;/script&gt;
+		</pre>
+		<h3 class="dt_itle_small">2 Step</h3>
+		<pre class="code language-html">	
+&lt;!-- Add  .layer, data-show-delay data-show-effect, data-time(not necessarily) to element. Example:--&gt;
+&lt;!-- 
+	data-show-effect - animation show effect
+	data-show-dela - delay animation (ms)
+	data-time - time animation (ms)
+
+--&gt;
+&lt;div id="english_portfolio" class="main_container columns3 projects"&gt;	
+	&lt;a href="#" target="blank" class="main_container_item project layer" data-show-effect="zoomIn" data-show-delay="400"&gt;
+		&lt;h3 class="project_item"&gt;Responsive modal window&lt;/h3&gt;
+		&lt;span class="hashtag"&gt;JQuery&lt;/span&gt;
+	&lt;/a&gt;
+	&lt;a href="#" target="blank" class="main_container_item project layer" data-show-effect="zoomIn" data-show-delay="600"&gt;
+		&lt;h3 class="project_item"&gt;Responsive modal window&lt;/h3&gt;
+		&lt;span class="hashtag"&gt;JQuery&lt;/span&gt;
+	&lt;/a&gt;
+	&lt;a href="#" target="blank" class="main_container_item project layer" data-show-effect="zoomIn" data-show-delay="800"&gt;
+		&lt;h3 class="project_item"&gt;Responsive modal window&lt;/h3&gt;
+		&lt;span class="hashtag"&gt;JQuery&lt;/span&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+		</pre>
+		<h3 class="dt_itle_small">initialization of a plug-in</h3>
+		<pre>
+			<code class="language-html" data-lang="javascript">
+(function($){
+	$(this).animationLayout({
+			container: $('#action_layout')
+	});
+})(jQuery);
+			</code>
+		</pre>
+		<button class="dt_button">Show</button>
+		<div id="english_portfolio" class="dt_container dt_container_columns3 projects">	
+			<a href="#" target="blank" class="dt_container_item demo_stas_project layer" data-show-effect="zoomIn" data-show-delay="400">
+				<h3 class="demo_stas_project_item">Responsive modal window</h3>
+			</a>
+			<a href="#" target="blank" class="dt_container_item demo_stas_project layer" data-show-effect="zoomIn" data-show-delay="600">
+				<h3 class="demo_stas_project_item">Responsive modal window</h3>
+			</a>
+			<a href="#" target="blank" class="dt_container_item demo_stas_project layer" data-show-effect="zoomIn" data-show-delay="800">
+				<h3 class="demo_stas_project_item">Responsive modal window</h3>
+			</a>
+		</div>
+	</div>
+	<footer class="dt_wrapper dt_footer">
+		<a class="dt_link" target="blank" href="https://www.linkedin.com/in/melnik909">Developed by Stas Melnikov</a>
+	</footer>
+<script src="../core/jquery.js"></script>
+<script src="../core/magicLayout.js"></script>
+<script>
+	(function($){
+		$('.dt_button').on('click',function(){
+				$(this).magicLayout({
+						container: $('#english_portfolio')
+				});
+		});
+	})(jQuery);
+</script>
+<script src="http://stas-melnikov.ru/rainbow-custom.min.js"></script> 
+</body>
+</html>
