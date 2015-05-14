@@ -34,7 +34,7 @@ facebook: https://www.facebook.com/melnik909
 		} else if ( typeof method === 'object' || ! method ) {
 		  return methods.init.apply( this, arguments );
 		} else {
-		  $.error( 'Метод с именем ' +  method + ' не существует для magicLayout' );
+		  $.error( 'This' +  method + ' is not defined' );
 		}
 
 	};

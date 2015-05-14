@@ -15,6 +15,7 @@
 .demo_stas_project {
     height: 250px;
 	width: 250px;
+	margin: 20px 10px;
 	position: relative;
 	text-align: center;
 	background-color: #40c95d;
@@ -49,9 +50,9 @@
 		</div>
 		<h3 class="dt_itle_small">1 Step</h3>
 		<pre class="code language-html">
-&lt;!-- include animate.css  and animationLayout.js--&gt;
+&lt;!-- include animate.css  and magicLayout.js--&gt;
 &lt;link rel="stylesheet" type="text/css" href="../core/animate.css" /&gt;
-&lt;script src="../core/animationLayout.js"&gt;&lt;/script&gt;
+&lt;script src="../core/magicLayout.js"&gt;&lt;/script&gt;
 		</pre>
 		<h3 class="dt_itle_small">2 Step</h3>
 		<pre class="code language-html">	
@@ -62,18 +63,15 @@
 	data-time - time animation (ms)
 
 --&gt;
-&lt;div id="english_portfolio" class="main_container columns3 projects"&gt;	
-	&lt;a href="#" target="blank" class="main_container_item project layer" data-show-effect="zoomIn" data-show-delay="400"&gt;
+&lt;div id="english_portfolio" class="dt_container dt_container_columns3 projects"&gt;	
+	&lt;a href="#" target="blank" class="dt_container_item demo_stas_project layer" data-show-effect="zoomIn" data-show-delay="400"&gt;
 		&lt;h3 class="project_item"&gt;Responsive modal window&lt;/h3&gt;
-		&lt;span class="hashtag"&gt;JQuery&lt;/span&gt;
 	&lt;/a&gt;
-	&lt;a href="#" target="blank" class="main_container_item project layer" data-show-effect="zoomIn" data-show-delay="600"&gt;
-		&lt;h3 class="project_item"&gt;Responsive modal window&lt;/h3&gt;
-		&lt;span class="hashtag"&gt;JQuery&lt;/span&gt;
+	&lt;a href="#" target="blank" class="dt_container_item demo_stas_project layer" data-show-effect="zoomIn" data-show-delay="600"&gt;
+		&lt;h3 class="demo_stas_project_item"&gt;Responsive modal window&lt;/h3&gt;
 	&lt;/a&gt;
-	&lt;a href="#" target="blank" class="main_container_item project layer" data-show-effect="zoomIn" data-show-delay="800"&gt;
-		&lt;h3 class="project_item"&gt;Responsive modal window&lt;/h3&gt;
-		&lt;span class="hashtag"&gt;JQuery&lt;/span&gt;
+	&lt;a href="#" target="blank" class="dt_container_item demo_stas_project layer" data-show-effect="zoomIn" data-show-delay="800"&gt;
+		&lt;h3 class="demo_stas_project_item"&gt;Responsive modal window&lt;/h3&gt;
 	&lt;/a&gt;
 &lt;/div&gt;
 		</pre>
@@ -82,7 +80,7 @@
 			<code class="language-html" data-lang="javascript">
 (function($){
 	$(this).animationLayout({
-			container: $('#action_layout')
+		container: $('#action_layout')
 	});
 })(jQuery);
 			</code>
@@ -99,6 +97,71 @@
 				<h3 class="demo_stas_project_item">Responsive modal window</h3>
 			</a>
 		</div>
+		<h2 class="dt_title_middle">List effects</h2>
+		<table>
+			<thead>
+			<tr>
+				<th colspan="2">Show</th>
+				<th colspan="2">Hide</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>jump</td>
+					<td>shine</td>
+					<td>impulse</td>
+					<td>elastic</td>
+				</tr>
+				<tr>
+					<td>jitter</td>
+					<td>shine</td>
+					<td>jump</td>
+					<td>jumpIn</td>
+				</tr>
+				<tr>
+					<td>jumpInDown</td>
+					<td>jumpInLeft</td>
+					<td>jumpInRight</td>
+					<td>jumpInUp</td>
+				</tr>
+				<tr>
+					<td>jump</td>
+					<td>fadeIn</td>
+					<td>fadeInDown</td>
+					<td>fadeInDownBig</td>
+				</tr>
+				<tr>
+					<td>fadeInLeft</td>
+					<td>fadeInLeftBig</td>
+					<td>fadeInRight</td>
+					<td>fadeInRightBig</td>
+				</tr>
+				<tr>
+					<td>fadeInUp</td>
+					<td>fadeInUpBig</td>
+					<td>flipInX</td>
+					<td>flipInY</td>
+				</tr>
+				<tr>
+					<td>lightSpeedIn</td>
+					<td>rotateIn</td>
+					<td>rotateInDownLeft</td>
+					<td>rotateInDownRight</td>
+				</tr>
+				<tr>
+					<td>rotateInUpLeft</td>
+					<td>rotateInUpRight</td>
+					<td>rollIn</td>
+					<td>zoomIn</td>
+				</tr>
+				<tr>
+					<td>zoomInDown</td>
+					<td>zoomInLeft</td>
+					<td>zoomInRight</td>
+					<td>zoomInUp</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 	<footer class="dt_wrapper dt_footer">
 		<a class="dt_link" target="blank" href="https://www.linkedin.com/in/melnik909">Developed by Stas Melnikov</a>
@@ -106,13 +169,13 @@
 <script src="../core/jquery.js"></script>
 <script src="../core/magicLayout.js"></script>
 <script>
-	(function($){
-		$('.dt_button').on('click',function(){
-				$(this).magicLayout({
-						container: $('#english_portfolio')
-				});
-		});
-	})(jQuery);
+(function($){
+	$('.dt_button').on('click',function(){
+			$(this).magicLayout({
+					container: $('#english_portfolio')
+			});
+	});
+})(jQuery);
 </script>
 <script src="http://stas-melnikov.ru/rainbow-custom.min.js"></script> 
 </body>
