@@ -10,3 +10,11 @@ http://stas-melnikov.ru/
 http://stas-melnikov.ru/en/magic_layout.html
 #Help
 If you liked this plug-in, please donate to me to steam of dollars. I very need your help. Thanks!
+##Contact info
+http://stas-melnikov.ru
+e-mail: melnik909@ya.ru
+linkedIn: https://www.linkedin.com/in/melnik909
+github: https://github.com/melnik909
+facebook: https://www.facebook.com/melnik909
+## License
+MIT
