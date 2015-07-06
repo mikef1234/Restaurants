@@ -65,4 +65,8 @@
 		$('html, body').animate({scrollTop: position}, 800);
 
 	});
+	
+	$('#action_button').click(function() {
+		location.reload();
+	});
 })(jQuery);
