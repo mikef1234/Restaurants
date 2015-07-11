@@ -38,7 +38,7 @@ facebook: https://www.facebook.com/melnik909
 			
 			return methods.init.apply( this, arguments );
 			
-		} else {
+		}else{
 			
 			$.error( 'This' +  method + ' is not defined' );
 		}
