@@ -80,8 +80,10 @@
 		<pre>
 			<code class="language-html" data-lang="javascript">
 (function($){
-	$(this).animationLayout({
-		container: $('#english_portfolio')
+	$('.dt_button').on('click',function(){
+			$(this).magicLayout({
+					container: $('#english_portfolio')
+			});
 	});
 })(jQuery);
 			</code>
