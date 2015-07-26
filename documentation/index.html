@@ -50,10 +50,8 @@
 		</div>
 		<h3 class="dt_itle_small">1 Step</h3>
 		<pre class="code language-html">
-&lt;!-- include animate.css  and jquery.js, magicLayout.js--&gt;
-&lt;link rel="stylesheet" type="text/css" href="../core/animate.css" /&gt;
-&lt;script src="../core/jquery.js"&gt;&lt;/script&gt;
-&lt;script src="../core/magicLayout.js"&gt;&lt;/script&gt;
+&lt;!-- include animate.css--&gt;
+&lt;link rel="stylesheet" type="text/css" href="core/animate.css" /&gt;
 		</pre>
 		<h3 class="dt_itle_small">2 Step</h3>
 		<pre class="code language-html">	
@@ -76,7 +74,13 @@
 	&lt;/a&gt;
 &lt;/div&gt;
 		</pre>
-		<h3 class="dt_itle_small">initialization of a plug-in</h3>
+		<h3 class="dt_itle_small">Step3</h3>
+		<pre class="code language-html">
+&lt;!-- include jquery.js, magicLayout.js  before the closing &lt;/body&gt; tag--&gt;
+&lt;script src="core/jquery.js"&gt;&lt;/script&gt;
+&lt;script src="core/magicLayout.js"&gt;&lt;/script&gt;
+		</pre>
+		<h3 class="dt_itle_small">Step4</h3>
 		<pre>
 			<code class="language-html" data-lang="javascript">
 (function($){
