@@ -4,7 +4,7 @@
 <title>Magic Layout</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" href="../core/animate.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="../core/css/less/animate.css" type="text/css" media="screen"/>
 <style>
 .layer {
     animation-fill-mode: both;
@@ -48,12 +48,12 @@
 			<p class="dt_paragraph">By: Stas Melnikov</p>
 			<p class="dt_paragraph">Email: <a href="mailto:melnik909@ya.ru" class="dt_link">melnik909@ya.ru</a></p>
 		</div>
-		<h3 class="dt_itle_small">1 Step</h3>
+		<h3 class="dt_itle_small">1 Step. Include animate.css</h3>
 		<pre class="code language-html">
-&lt;!-- include animate.css--&gt;
-&lt;link rel="stylesheet" type="text/css" href="core/animate.css" /&gt;
+			&lt;!-- include animate.css--&gt;
+			&lt;link rel="stylesheet" type="text/css" href="core/css/less/animate.css" /&gt;
 		</pre>
-		<h3 class="dt_itle_small">2 Step</h3>
+		<h3 class="dt_itle_small">2 Step. Create HTML markup</h3>
 		<pre class="code language-html">	
 &lt;!-- Add  .layer, data-show-delay data-show-effect, data-time(not necessarily) to element. Example:--&gt;
 &lt;!-- 
@@ -74,22 +74,24 @@
 	&lt;/a&gt;
 &lt;/div&gt;
 		</pre>
-		<h3 class="dt_itle_small">Step3</h3>
+		<h3 class="dt_itle_small">Step3. Include jquery.js and magicLayout.js</h3>
 		<pre class="code language-html">
-&lt;!-- include jquery.js, magicLayout.js  before the closing &lt;/body&gt; tag--&gt;
-&lt;script src="core/jquery.js"&gt;&lt;/script&gt;
-&lt;script src="core/magicLayout.js"&gt;&lt;/script&gt;
+			<code>
+				&lt;!-- include jquery.js, magicLayout.js  before the closing &lt;/body&gt; tag--&gt;
+				&lt;script src="core/jquery.js"&gt;&lt;/script&gt;
+				&lt;script src="core/magicLayout.js"&gt;&lt;/script&gt;
+			</code>
 		</pre>
-		<h3 class="dt_itle_small">Step4</h3>
+		<h3 class="dt_itle_small">Step4. Init plugin</h3>
 		<pre>
-			<code class="language-html" data-lang="javascript">
-(function($){
-	$('.dt_button').on('click',function(){
-		$(this).magicLayout({
-			container: $('#english_portfolio')
-		});
-	});
-})(jQuery);
+			<code class="language-javascript" data-lang="javascript">
+				(function($){
+					$('.dt_button').on('click',function(){
+						$(this).magicLayout({
+							container: $('#english_portfolio')
+						});
+					});
+				})(jQuery);
 			</code>
 		</pre>
 		<button class="dt_button">Show</button>
@@ -172,8 +174,8 @@
 	<footer class="dt_wrapper dt_footer">
 		<a class="dt_link" target="blank" href="https://www.linkedin.com/in/melnik909">Developed by Stas Melnikov</a>
 	</footer>
-<script src="../core/jquery.js"></script>
-<script src="../core/magicLayout.js"></script>
+<script src="../core/js/jquery.js"></script>
+<script src="../core/js/magicLayout.js"></script>
 <script>
 (function($){
 	$('.dt_button').on('click',function(){

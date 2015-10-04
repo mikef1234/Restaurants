@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>The Magic Layout</title>
@@ -134,22 +134,21 @@
 	scripts_len = scripts.length;
 
 	
-	window.addEventListener('load', init(scripts));
-
+	window.addEventListener('load', init);
 	
-	function init(scripts){
+	function init(){
+	
 		var script;
-		setTimeout(function(){
-			if(window.outerWidth > 640){
-				for(var i = 0; i < scripts_len; i++){
-					script = document.createElement("script");
-					script.src = scripts[i].src;
-					script.async = scripts[i].async;
-					document.body.appendChild(script);
-				}
-				
-			}
-		},600);
+		
+		for(var i = 0, scripts_len = scripts.length; i < scripts_len; i++){
+		
+			script = document.createElement("script");
+			script.src = scripts[i].src;
+			script.async = scripts[i].async;
+			document.body.appendChild(script);
+			
+		}
+			
 	}
 })();
 </script>  
