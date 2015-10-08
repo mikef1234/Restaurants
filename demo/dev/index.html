@@ -22,6 +22,10 @@
 					<span class="welcome__name layer" data-show-effect="fadeInDown" data-show-delay="500">Magic Layout</span>
 					<span class="welcome__label layer" data-show-effect="fadeInUp" data-show-delay="500">JQuery plugin by which you can animate all the elements on the page</span>
 				</h1>
+				<div class="welcome__footer">
+					<a href="https://github.com/melnik909/magic_layout" target="_blank" class="welcome__link layer" data-show-effect="zoomIn" data-show-delay="1000">Download</a>
+					<a href="https://www.paypal.me/melnik909" target="_blank" class="welcome__link layer" data-show-effect="zoomIn" data-show-delay="1000">Donate</a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -59,7 +63,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="display-tркуу" class="wrapper display_js">
+	<section id="display-three" class="wrapper display_js">
 		<div class="main-container_fullwidth">
 			<div class="main-container__header">
 				<h2 class="title"><span class="title__label">More my plugins</span></h2>
@@ -164,40 +168,5 @@
 <script src="js/jquery.js"></script>
 <script src="js/min/magicLayout.min.js"></script>
 <script async src="js/main.js"></script>
- <script>
-(function(){
-
-	var scripts = [
-
-		{
-			src: "//yastatic.net/share/share.js",
-			async: true,
-		},
-		{
-			src : "../metrika.js",
-			async: true,
-		}
-	],
-	
-	scripts_len = scripts.length;
-
-	//window.addEventListener('load', init);
-	
-	function init(){
-	
-		var script;
-		
-		for(var i = 0, scripts_len = scripts.length; i < scripts_len; i++){
-		
-			script = document.createElement("script");
-			script.src = scripts[i].src;
-			script.async = scripts[i].async;
-			document.body.appendChild(script);
-			
-		}
-			
-	}
-})();
-</script>  
 </body>
 </html>
